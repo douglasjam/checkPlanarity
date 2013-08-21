@@ -7,32 +7,32 @@
 
 <node id="1">
 <data key="name">1</data>
-<data key="color">2</data>
+<data key="color">1</data>
 </node>
 
 <node id="2">
 <data key="name">2</data>
-<data key="color">2</data>
+<data key="color">4</data>
 </node>
 
 <node id="3">
 <data key="name">3</data>
-<data key="color">7</data>
+<data key="color">2</data>
 </node>
 
 <node id="4">
 <data key="name">4</data>
-<data key="color">4</data>
+<data key="color">9</data>
 </node>
 
 <node id="5">
 <data key="name">6</data>
-<data key="color">8</data>
+<data key="color">0</data>
 </node>
 
 <node id="6">
 <data key="name">7</data>
-<data key="color">3</data>
+<data key="color">8</data>
 </node>
 
 <edge source="1" target="2"></edge>
