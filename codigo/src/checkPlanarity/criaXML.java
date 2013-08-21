@@ -1,0 +1,81 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package checkPlanarity;
+
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Random;
+
+/**
+ *
+ * @author douglasjam
+ */
+public class criaXML {
+
+    private String xml;
+    private Random r = new Random();
+    private String nossaMatriz[][];
+
+    public void constroiXML(matrizAdjacencia matriz) {
+
+        nossaMatriz = matriz.getMatriz();
+        //cria cabeçalho
+        this.xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+        this.xml += "<graphml xmlns=\"http://graphml.graphdrawing.org/xmlns\">\n";
+        this.xml += "<graph edgedefault=\"undirected\">\n\n";
+
+        this.xml += "<key id=\"name\" for=\"node\" attr.name=\"name\" attr.type=\"string\"/>\n";
+        this.xml += "<key id=\"color\" for=\"node\" attr.name=\"color\" attr.type=\"string\"/>\n\n";
+
+        // adiciona os nos
+
+        for (int i = 0; i < matriz.getNumeroVertices(); i++) {
+
+            this.xml += "<node id=\"" + (i + 1) + "\">\n";
+            this.xml += "<data key=\"name\">" + matriz.getVertice(i) + "</data>\n";
+            this.xml += "<data key=\"color\">" + r.nextInt(10) + "</data>\n";
+            this.xml += "</node>\n\n";
+        }
+
+        // adiciona os vertices
+
+        for (int i = 0; i < (matriz.getNumeroVertices()); i++) {
+            for (int j = 0; j < matriz.getNumeroVertices(); j++) {
+                if (i != j) {
+                    if (nossaMatriz[i][j].equals("1")) {
+                        System.out.println("I: " + i + " J: " + j);
+                        this.xml += "<edge source=\"" + (i + 1) + "\" target=\"" + (j + 1) + "\"></edge>\n";
+                    }
+                }
+            }
+        }
+
+
+
+        this.xml += "<edge source=\"1\" target=\"2\"></edge>\n";
+
+
+        // finaliza arquivo
+
+        this.xml += "\n</graph>\n";
+        this.xml += "</graphml>";
+    }
+
+    public String getXML() {
+        try {
+            BufferedWriter saida = new BufferedWriter(new FileWriter("ultimoTestado.xml"));
+            saida.write(this.xml);
+            saida.close();
+        } catch (IOException e) {
+            System.out.println("Erro ao gravar o arquivo\n");
+        }
+
+        return "ultimoTestado.xml";
+    }
+}

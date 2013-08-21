@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/checkplanarity/!svn/ver/7/checkPlanarity/src/checkPlanarity
+END
+criaXML.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svnroot/checkplanarity/!svn/ver/23/checkPlanarity/src/checkPlanarity/criaXML.java
+END
+Main.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/checkplanarity/!svn/ver/6/checkPlanarity/src/checkPlanarity/Main.java
+END
+matrizAdjacencia.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/checkplanarity/!svn/ver/23/checkPlanarity/src/checkPlanarity/matrizAdjacencia.java
+END
+carregaArquivo.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/checkplanarity/!svn/ver/6/checkPlanarity/src/checkPlanarity/carregaArquivo.java
+END
+paraTestes.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/checkplanarity/!svn/ver/23/checkPlanarity/src/checkPlanarity/paraTestes.java
+END
+criaGrafo.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/checkplanarity/!svn/ver/24/checkPlanarity/src/checkPlanarity/criaGrafo.java
+END

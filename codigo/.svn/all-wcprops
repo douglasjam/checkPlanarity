@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/checkplanarity/!svn/ver/10/checkPlanarity
+END
+prefuse.jar
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/checkplanarity/!svn/ver/25/checkPlanarity/prefuse.jar
+END
+manifest.mf
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/checkplanarity/!svn/ver/4/checkPlanarity/manifest.mf
+END
+ultimoTestado.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/checkplanarity/!svn/ver/24/checkPlanarity/ultimoTestado.xml
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/checkplanarity/!svn/ver/6/checkPlanarity/build.xml
+END
+build-before-profiler.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/checkplanarity/!svn/ver/10/checkPlanarity/build-before-profiler.xml
+END
